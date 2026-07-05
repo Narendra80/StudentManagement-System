@@ -1,0 +1,80 @@
+[
+    {
+        "student_id": "STU-1001",
+        "name": "Aarav Sharma",
+        "roll_number": "2023-CS-001",
+        "branch": "Computer Science",
+        "year": "3rd Year",
+        "section": "A",
+        "gender": "Male",
+        "dob": "2003-05-14",
+        "email": "aarav.sharma@example.com",
+        "mobile": "9876543210",
+        "address": "123 MG Road, Bengaluru, Karnataka"
+    },
+    {
+        "student_id": "STU-1002",
+        "name": "Priya Patel",
+        "roll_number": "2023-EC-014",
+        "branch": "Electronics & Communication",
+        "year": "2nd Year",
+        "section": "B",
+        "gender": "Female",
+        "dob": "2004-08-22",
+        "email": "priya.patel@example.com",
+        "mobile": "8765432109",
+        "address": "456 Sardar Patel Way, Ahmedabad, Gujarat"
+    },
+    {
+        "student_id": "STU-1003",
+        "name": "Rohan Verma",
+        "roll_number": "2023-ME-023",
+        "branch": "Mechanical Engineering",
+        "year": "4th Year",
+        "section": "A",
+        "gender": "Male",
+        "dob": "2002-11-03",
+        "email": "rohan.verma@example.com",
+        "mobile": "7654321098",
+        "address": "789 Park Street, Kolkata, West Bengal"
+    },
+    {
+        "student_id": "STU-1004",
+        "name": "Ananya Iyer",
+        "roll_number": "2023-IT-008",
+        "branch": "Information Technology",
+        "year": "3rd Year",
+        "section": "C",
+        "gender": "Female",
+        "dob": "2003-02-19",
+        "email": "ananya.iyer@example.com",
+        "mobile": "9123456780",
+        "address": "321 Anna Salai, Chennai, Tamil Nadu"
+    },
+    {
+        "student_id": "STU-1005",
+        "name": "Kabir Mehta",
+        "roll_number": "2023-CE-019",
+        "branch": "Civil Engineering",
+        "year": "1st Year",
+        "section": "A",
+        "gender": "Male",
+        "dob": "2005-07-30",
+        "email": "kabir.mehta@example.com",
+        "mobile": "8901234567",
+        "address": "654 Linking Road, Mumbai, Maharashtra"
+    },
+    {
+        "student_id": "101",
+        "roll_number": "238W1A05O0",
+        "branch": "Computer Science",
+        "year": "4th Year",
+        "section": "D",
+        "name": "Nirikshan Mecharapu",
+        "gender": "Male",
+        "dob": "2005-09-15",
+        "email": "nirikshanmecharapu@gmail.com",
+        "mobile": "7013094974",
+        "address": "Near pavan nilayam,kodali koteshwarao street,tadigadapa, vijayawada"
+    }
+]
