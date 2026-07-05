@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Students | Student Management System</title>
+    <meta name="description" content="Search student records instantly across ID, Name, Roll Number, Branch, and Email with real-time suggestions and autocomplete chips.">
+    <!-- Bootstrap 5 & Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Design System -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="search">
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-mortarboard-fill"></i>
+                    <span>EduPulse <small class="fs-6 text-muted fw-normal">SMS</small></span>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto align-items-center gap-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="add_student.html"><i class="bi bi-person-plus me-1"></i>Add Student</a></li>
+                        <li class="nav-item"><a class="nav-link" href="view_students.html"><i class="bi bi-table me-1"></i>View Students</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="search_student.html"><i class="bi bi-search me-1"></i>Search</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle me-1"></i>About</a></li>
+                        <li class="nav-item ms-lg-2">
+                            <button id="theme-toggle-btn" class="btn-theme-toggle" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+                                <i id="theme-icon" class="bi bi-moon-stars-fill"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow-1 py-5">
+        <div class="container">
+            
+            <!-- Hero Search Header -->
+            <div class="text-center max-w-2xl mx-auto mb-5">
+                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold mb-3">
+                    <i class="bi bi-cpu-fill me-1"></i> Real-time Debounced Querying
+                </span>
+                <h1 class="fw-bold mb-3">Instant Student Search</h1>
+                <p class="text-secondary mx-auto" style="max-width: 600px;">
+                    Search student demographics, academic branches, email addresses, and enrollment IDs with real-time responsive cards.
+                </p>
+
+                <!-- Search Input Box -->
+                <div class="card-custom p-2 mt-4 mx-auto shadow-lg" style="max-width: 700px; border-radius: 50px;">
+                    <div class="input-group align-items-center">
+                        <span class="input-group-text bg-transparent border-0 ps-4 text-primary fs-4"><i class="bi bi-search"></i></span>
+                        <input type="text" id="live-search-input" class="form-control border-0 bg-transparent py-3 fs-5 shadow-none" placeholder="Type Student ID, Name, Roll No, or Branch..." autocomplete="off">
+                        <button class="btn btn-custom-primary rounded-pill px-4 me-1 py-2" type="button" onclick="document.getElementById('live-search-input').focus()">
+                            Search
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Search Suggestions Chips -->
+                <div class="mt-4 d-flex justify-content-center align-items-center gap-2 flex-wrap">
+                    <span class="small text-muted fw-semibold me-1"><i class="bi bi-lightbulb-fill text-warning me-1"></i>Suggestions:</span>
+                    <span class="badge badge-custom badge-branch-cs suggestion-chip" data-search="Computer Science" style="cursor: pointer;">Computer Science</span>
+                    <span class="badge badge-custom badge-branch-ec suggestion-chip" data-search="Electronics" style="cursor: pointer;">Electronics</span>
+                    <span class="badge badge-custom badge-branch-me suggestion-chip" data-search="2023-ME" style="cursor: pointer;">Mechanical (2023)</span>
+                    <span class="badge badge-custom badge-branch-it suggestion-chip" data-search="Aarav" style="cursor: pointer;">Aarav Sharma</span>
+                    <span class="badge badge-custom badge-branch-ce suggestion-chip" data-search="STU-" style="cursor: pointer;">All IDs (STU-)</span>
+                </div>
+            </div>
+
+            <!-- Search Results Container -->
+            <div id="search-results-container" class="mt-5">
+                <!-- Dynamically populated by script.js -->
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container text-center">
+            <p class="mb-1 fw-semibold">Student Management System — Built with Python & Bootstrap 5</p>
+            <p class="small text-secondary mb-0">Designed for seamless CRUD operations, responsive analytics, and aesthetic excellence.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
